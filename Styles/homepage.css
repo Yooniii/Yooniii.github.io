@@ -1,0 +1,273 @@
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  max-width: 140px;
+  min-height: 3px;
+  background-color: rgb(254, 247, 253);
+  border-color: none;
+  margin-top: 33px;
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #404273ff;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1%;
+}
+
+/* NAV SECTION */
+.burger-menu {
+  color: var(black);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  background-color:transparent;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 200;
+  float: left;
+  color: rgb(254, 247, 253);
+  font-family: "Roboto Slab";
+  text-decoration: none;
+}
+
+.logo:hover {
+  color: rgb(254, 247, 253);
+  text-decoration: none;
+}
+
+nav ul{
+  display: flex;
+  float: right;
+  margin-right: 15px;
+}
+
+nav ul li {
+  float: right;
+  position: relative;
+  list-style: none;
+}
+
+nav ul li a{
+  display: block;
+  font-family: "Roboto Slab";
+  color: rgb(254, 247, 253);
+  font-size: 17px;
+  padding: 22px 12px;
+  padding-right: 30px;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: #353565ff;
+  padding: 2px;
+  border-radius: 1px 3px 4px 4px;
+  font-size: 15px;
+  text-align: center;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 180px;
+  border-radius: 5px;
+}
+
+nav ul li ul li a{
+  padding: 13px 2px;
+}
+
+nav ul li ul li a:hover{
+  background-color: rgb(37, 37, 72);
+  text-decoration: none;
+  color: white;
+}
+
+.nav-link:hover {
+ color: rgb(29, 29, 58);
+ cursor: pointer;
+}
+
+/* BANNER SECTION */
+h1, .header-text{
+  margin-bottom: 13px;
+  background-color: transparent;
+  color: rgb(254, 247, 253);  
+  font-family: Roboto;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: light;
+  letter-spacing: 11px;
+}
+
+.header-text {
+  font-size: 23px;
+  font-family: "Roboto Slab";
+  font-weight: 10;
+  letter-spacing: 1.5px;
+}
+
+.banner-container {
+  background-image: url('bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 850px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bg-container {
+  position: relative;
+  background-size: contain;
+}
+
+.bg {
+  background-size: cover;
+}
+
+.banner-info {
+  text-align: center;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bio-text{
+  background-color: transparent;
+}
+
+/* ABOUT ME  */
+
+.aboutme-container {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(254, 237, 252);
+  min-height: 850px;
+  padding: 90px 110px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+
+.bio-container {
+  line-height: 40px;
+  max-width: 570px;
+}
+
+.aboutme-pic {
+  max-width: 380px;
+  min-height: 200px;
+  border-radius: 8%;
+  object-fit: cover;
+}
+
+.aboutme-img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  padding-top: 100px;
+}
+
+footer{
+  background-color: #353565;
+  font-family: Roboto;
+  font-weight: 100;
+  padding: 1.1rem;
+  padding-bottom: 0.7rem;
+  font-size: 11px;
+  color: rgb(254, 247, 253);
+}
+
+footer p {
+  background-color: transparent;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.copy{
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 40em) {
+  .container {
+    display: block;
+  }
+
+  .aboutme-pic {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 98%;
+  }
+
+  .aboutme-container {
+    padding: 0px 0px;
+  }
+
+  .aboutme-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bio-container {
+    text-align: center;
+  }
+
+  .contact {
+    padding-top: 30px;
+  }
+  .hr-container {
+    display: flex;
+  }
+
+  hr {
+    margin: 0;
+  }
+
+  
+
+}

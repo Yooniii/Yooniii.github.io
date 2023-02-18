@@ -1,0 +1,337 @@
+/* VISUAL ARTS */
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr {
+  width: 55px;
+  height: 3px;
+  background-color: black;
+  border-color: none;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  margin-left: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto";
+}
+
+img {
+  max-width: 100%;
+  border-radius: 1%;
+}
+
+/* NAV MENU */
+.burger-menu {
+  color: var(black);
+  font-size: 2rem;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-container {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 90px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-family: Roboto;
+  font-weight: 100;
+  background-color:rgb(239, 239, 239);
+  opacity: 75%;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 200;
+  float: left;
+  color: black;
+  font-family: "Roboto Slab";
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul{
+  display: flex;
+  float: right;
+  margin-right: 15px;
+}
+
+nav ul li {
+  float: right;
+  position: relative;
+  list-style: none;
+}
+
+nav ul li a{
+  display: block;
+  font-family: "Roboto Slab";
+  color: black;
+  font-size: 17px;
+  padding: 22px 12px;
+  text-decoration: none;
+  padding-right: 15px;
+}
+
+nav ul li ul{
+  display: none;
+  position: absolute;
+  background-color: rgb(246, 246, 246);
+  padding: 2px;
+  border-radius: 1px 3px 4px 4px;
+  font-size: 15px;
+  text-align: center;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 180px;
+  border-radius: 5px;
+}
+
+nav ul li ul li a{
+  padding: 13px 2px;
+  padding-right: 22px;
+}
+
+nav ul li ul li a:hover{
+  background-color: rgb(234, 234, 234);
+}
+
+.nav-link:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* PROJECTS */
+.landing-container {
+ display: flex;
+ gap: 180px;
+}
+
+
+.padding-space {
+  padding: 0 130px;
+}
+
+.projects-container {
+  padding-top: 190px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.project-info {
+  font-family: "Roboto";
+  font-weight: 100;
+  line-height: 50px;
+}
+
+.invisible-city-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invisible-city-img {
+  object-fit: cover;
+  max-width: 450px;
+  min-height: 550px;
+}
+
+/* SKETCHES */
+.art-gallery {
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.gallery-title{
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 100;
+  display: flex;
+}
+
+.sketches-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-height: 600px;
+}
+
+.landscape .portrait {
+  padding-top: 40px;
+  max-width: 700px;
+  object-fit: contain;
+  display: flex;
+}
+
+/* PACHINKO  */
+.pachinko-grid{
+  color: black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 140px;
+  padding-bottom: 100px;
+  font-family: Roboto;
+}
+
+.pachinko-img-container {
+  display: flex;
+  justify-content: center;
+
+}
+.pachinko-grid img {
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.pachinko-text {
+  font-weight: 100;
+  line-height: 50px;
+  padding-right: 80px;
+  font: "Roboto";
+}
+
+/* 3x3 GRID  */
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item img {
+  height: 480px;
+  object-fit: cover;
+}
+
+footer{
+  background-color: rgb(234, 234, 234);
+  font-weight: 100;
+  padding: 1.1rem;
+  padding-bottom: 0.7rem;
+  margin: 2rem 0 0;
+  font-size: 11px;
+  color: black;
+}
+
+footer p {
+  background-color: transparent;
+  margin-top: 3px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 720px) {
+ .padding-space {
+  padding: 20px;
+ }
+
+  .landing-container {
+    display: block;
+  }
+
+  .sketches-container, .pachinko-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invisible-city-img {
+    display: block;
+  }
+
+  .project-info {
+    display: block;
+    padding: 0;
+  }
+
+  .projects-container {
+    padding-top: 100px;
+  }
+
+  .pachinko-grid img {
+    padding-bottom: -50px;
+  }
+
+  .grid-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pachinko-grid img, .pachinko-text {
+    padding: 0;
+  }
+
+  .pachinko-grid img {
+    width: 98%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+ .padding-space {
+  padding: 20px;
+ }
+
+  .landing-container {
+    display: block;
+  }
+
+  .sketches-container, .pachinko-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .invisible-city-img {
+    display: block;
+  }
+
+  .project-info {
+    display: block;
+    padding: 0;
+  }
+
+  .projects-container {
+    padding-top: 100px;
+  }
+
+  .pachinko-grid img {
+    padding-bottom: -50px;
+  }
+
+  .grid-container {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pachinko-grid img, .pachinko-text {
+    padding: 0;
+  }
+
+  .pachinko-grid img {
+    width: 98%;
+  }
+}
+
