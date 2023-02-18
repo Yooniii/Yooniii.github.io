@@ -80,6 +80,7 @@ nav ul li a{
   font-size: 17px;
   padding: 22px 12px;
   padding-right: 30px;
+  text-decoration: none;
 }
 
 nav ul li ul{
